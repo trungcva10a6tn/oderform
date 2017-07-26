@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oderform</title>
+    <script src="angula/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-app="oderform">
+    <div ng-controller="oderformctrl" >
+        <div class="sp" ng-repeat="row in services" ng-click="chose(row)" ng-class="{active:row.active}">
+            <p>{{row.name}}---${{row.price}}--{{row.active}}</p>
+        </div>
+        <div class="sum">
+            <span>tổng: <span>$ {{sum()}}</span></span>
+        </div>
+    </div>
+</body>
+</html>

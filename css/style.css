@@ -1,0 +1,22 @@
+body>div{
+    text-align: center;
+    margin: auto;
+    width: 500px;
+}
+.sp{
+    padding: 10px;
+    background: greenyellow;
+    font-size: 20px;
+    color: green;
+    margin: 10px;
+}
+.sp.active{
+    background: #ffca60;
+}
+.sum{
+    padding: 10px;
+    background: greenyellow;
+    font-size: 20px;
+    color: green;
+    margin: 10px;
+}
